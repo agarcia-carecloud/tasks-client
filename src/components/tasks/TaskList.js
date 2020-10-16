@@ -57,8 +57,8 @@ export default class TaskList extends Component {
           </div>
           <div className="space-between">
             <h4>{task.isComplete ? "Task Complete" : "Task Incomplete"}</h4>
-            <Link to={`/update/${task._id}`}>Update</Link>
-            <h4>{task.completionDate}</h4>
+            <h4>Due Date: {task.completionDate}</h4>
+            <Link to={`/task/details/${task._id}`}>Update</Link>
           </div>
         </div>
       );

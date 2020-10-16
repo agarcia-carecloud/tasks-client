@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import TaskList from "./components/tasks/TaskList";
 import UpdateTask from "./components/tasks/UpdateTask";
+import AddTask from "./components/tasks/AddTask";
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
         <Route exact path="/task-list" component={TaskList} />
         <Route
           exact
-          path="/update/:taskId"
+          path="/details/:taskId"
           render={(props) => <UpdateTask {...props} />}
         />
+        <Route exact path="/create" component={AddTask} />
       </Switch>
     </div>
   );

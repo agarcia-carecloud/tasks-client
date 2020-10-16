@@ -6,6 +6,7 @@ export default function Navbar() {
     <div className="space-between">
       <Link to="/">Home</Link>
       <Link to="/task-list">All Tasks</Link>
+      <Link to="/create">Create Task</Link>
     </div>
   );
 }
